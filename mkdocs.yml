@@ -1,0 +1,55 @@
+site_name: SML_SNU
+site_description: 서울대학교 위성기상실험실 공용 코드 저장소
+site_url: https://smlsnu.github.io/SML_SNU/
+repo_url: https://github.com/smlsnu/SML_SNU
+repo_name: smlsnu/SML_SNU
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - content.code.copy
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+
+nav:
+  - 홈: index.md
+  - 시작하기: getting-started.md
+  - Git 사용법: git-guide.md
+  - 저장소 구조: structure.md
+  - 권한과 규칙: permissions.md
+  - 자주 묻는 질문: faq.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true

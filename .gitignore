@@ -1,0 +1,76 @@
+# ---- 데이터 파일 (절대 커밋 금지) ----
+*.pkl
+*.pickle
+*.h5
+*.hdf
+*.hdf4
+*.hdf5
+*.he4
+*.he5
+*.nc
+*.nc4
+*.grb
+*.grib
+*.grib2
+*.gz
+*.bz2
+*.zip
+*.tar
+*.npy
+*.npz
+*.mat
+*.bin
+*.dat
+
+# ---- 데이터/결과 디렉토리 ----
+data/
+cache/
+result/
+results/
+output/
+outputs/
+logs/
+
+# ---- 그림 (문서용은 docs/ 아래에 두고 예외 처리) ----
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.eps
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.gif
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# ---- 가상환경 ----
+venv/
+.venv/
+env/
+remote/
+conda-env/
+
+# ---- 자격 증명 ----
+.env
+*.key
+*.pem
+secrets.*
+credentials.*
+
+# ---- 에디터 / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ---- MkDocs 빌드 산출물 ----
+site/

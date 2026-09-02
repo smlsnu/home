@@ -1,0 +1,21 @@
+name: sml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - netcdf4
+  - h5py
+  - pyhdf
+  - matplotlib
+  - cartopy
+  - scikit-learn
+  - pyproj
+  - rasterio
+  - pillow
+  - jupyterlab
+  - ipykernel
+  - pip
