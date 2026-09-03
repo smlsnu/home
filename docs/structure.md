@@ -8,11 +8,11 @@ GitHub은 폴더 단위가 아니라 저장소 단위로 권한을 부여하기 
 github.com/smlsnu/
 ├── docs             안내 문서 (이 사이트)
 ├── basic-codes      공용 코드
-├── project-rain     강수
-├── project-tq       온습도
-├── project-rt       복사전달
-├── project-polar    극지
-└── project-env      환경
+├── project-rain     프로젝트별 코드
+├── project-tq
+├── project-rt
+├── project-polar
+└── project-env
 ```
 
 ## docs
