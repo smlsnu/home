@@ -18,7 +18,7 @@
 
 | 팀 | Write | Read |
 |----|-------|------|
-| `lab-members` | `docs`, `basic-codes` | 모든 프로젝트 저장소 |
+| `lab-members` | `home`, `basic-codes` | 모든 프로젝트 저장소 |
 | `project-rain` | `project-rain` | 〃 |
 | `project-tq` | `project-tq` | 〃 |
 | `project-rt` | `project-rt` | 〃 |

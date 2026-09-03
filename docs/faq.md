@@ -20,7 +20,7 @@ remote: Repository not found.
 
 ## Pull 할 때 충돌이 났습니다
 
-[Git 사용법 → 충돌 해결](git-guide.md#충돌conflict-해결) 을 참고하세요.
+[Git 사용법 → 충돌 해결](git-guide.md#conflict) 을 참고하세요.
 작업 시작 전 항상 Pull 하면 대부분 예방됩니다.
 
 ## 조직 초대가 수락되지 않습니다
@@ -47,7 +47,7 @@ git commit --amend
 ## 결과 그림은 올려도 되나요
 
 원칙적으로 올리지 않습니다. 저장소가 무거워집니다.
-문서에 꼭 필요한 그림만 `docs` 저장소의 `docs/` 아래에 넣으세요.
+문서에 꼭 필요한 그림만 `home` 저장소의 `docs/` 아래에 넣으세요.
 
 ## 남의 코드를 수정해도 되나요
 

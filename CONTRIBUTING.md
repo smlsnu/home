@@ -33,4 +33,4 @@ mkdocs serve
 
 이 저장소는 **공개(public)** 입니다. 코드, 데이터, API 키, 미공개 연구 내용을 올리지 마세요.
 
-코드 기여 규칙은 사이트의 [권한과 규칙](https://smlsnu.github.io/docs/permissions/) 을 참고하세요.
+코드 기여 규칙은 사이트의 [권한과 규칙](https://smlsnu.github.io/home/permissions/) 을 참고하세요.

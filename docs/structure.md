@@ -6,7 +6,7 @@ GitHub은 폴더 단위가 아니라 저장소 단위로 권한을 부여하기 
 
 ```
 github.com/smlsnu/
-├── docs             안내 문서 (이 사이트)
+├── home             안내 문서 (이 사이트)
 ├── basic-codes      공용 코드
 ├── project-rain     프로젝트별 코드
 ├── project-tq
@@ -15,7 +15,7 @@ github.com/smlsnu/
 └── project-env
 ```
 
-## docs
+## home
 
 연구실 GitHub 사용 규칙과 안내를 담습니다. 코드는 넣지 않습니다.
 `docs/` 안의 마크다운을 고쳐 push하면 몇 분 안에 이 사이트에 반영됩니다.

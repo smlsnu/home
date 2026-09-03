@@ -1,55 +1,87 @@
 site_name: SML SNU
-site_description: 서울대학교 위성기상실험실 공용 코드 저장소
-site_url: https://smlsnu.github.io/docs/
-repo_url: https://github.com/smlsnu/docs
-repo_name: smlsnu/docs
+site_description: 서울대학교 위성기상실험실 GitHub 안내
+site_url: https://smlsnu.github.io/home/
+repo_url: https://github.com/smlsnu/home
+repo_name: smlsnu/home
 edit_uri: edit/main/docs/
+copyright: Satellite Meteorology Laboratory, Seoul National University
 
 theme:
   name: material
   language: ko
+  icon:
+    logo: material/satellite-variant
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
+    - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.footer
+    - toc.follow
     - content.action.edit
     - content.code.copy
+    - content.tabs.link
     - search.highlight
+    - search.suggest
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
-        name: 다크 모드로 전환
+        name: 다크 모드
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
-        name: 라이트 모드로 전환
+        name: 라이트 모드
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/smlsnu
+      name: smlsnu 조직
+  generator: false
 
 nav:
   - 홈: index.md
   - 시작하기: getting-started.md
   - Git 사용법: git-guide.md
-  - 저장소 구조: structure.md
+  - 저장소 구성: structure.md
   - 권한과 규칙: permissions.md
-  - 자주 묻는 질문: faq.md
+  - FAQ: faq.md
 
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - tables
+  - footnotes
   - toc:
       permalink: true
+      permalink_title: 이 위치로 링크
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true

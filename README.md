@@ -5,7 +5,7 @@
 이 저장소에는 코드가 없습니다. 연구실 GitHub 사용 규칙, Git 사용법, 저장소 목록 등
 **안내 문서만** 들어 있으며, 그 내용이 아래 사이트로 발행됩니다.
 
-📖 **https://smlsnu.github.io/docs/**
+📖 **https://smlsnu.github.io/home/**
 
 ---
 
@@ -13,7 +13,7 @@
 
 | 저장소 | 공개 | 내용 | 수정 가능 |
 |--------|------|------|-----------|
-| [`docs`](https://github.com/smlsnu/docs) | public | 안내 문서 (이 저장소) | `lab-members` |
+| [`home`](https://github.com/smlsnu/home) | public | 안내 문서 (이 저장소) | `lab-members` |
 | [`basic-codes`](https://github.com/smlsnu/basic-codes) | private | 공용 유틸리티·시각화 템플릿·입문 예제 | `lab-members` |
 | [`project-rain`](https://github.com/smlsnu/project-rain) | private | rain 프로젝트 | `project-rain` |
 | [`project-tq`](https://github.com/smlsnu/project-tq) | private | tq 프로젝트 | `project-tq` |
@@ -26,8 +26,8 @@
 ## 처음 오셨다면
 
 1. `smlsnu` 조직 초대를 수락합니다.
-2. [문서 사이트](https://smlsnu.github.io/docs/)의 **시작하기** 를 따라 환경을 준비합니다.
-3. [Git 사용법](https://smlsnu.github.io/docs/git-guide/) 을 읽고 작업 흐름을 익힙니다.
+2. [문서 사이트](https://smlsnu.github.io/home/)의 **시작하기** 를 따라 환경을 준비합니다.
+3. [Git 사용법](https://smlsnu.github.io/home/git-guide/) 을 읽고 작업 흐름을 익힙니다.
 
 ## 문서 수정
 
