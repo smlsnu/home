@@ -1,8 +1,8 @@
-site_name: SML_SNU
+site_name: SML SNU
 site_description: 서울대학교 위성기상실험실 공용 코드 저장소
-site_url: https://smlsnu.github.io/SML_SNU/
-repo_url: https://github.com/smlsnu/SML_SNU
-repo_name: smlsnu/SML_SNU
+site_url: https://smlsnu.github.io/docs/
+repo_url: https://github.com/smlsnu/docs
+repo_name: smlsnu/docs
 edit_uri: edit/main/docs/
 
 theme:

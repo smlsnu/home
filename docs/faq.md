@@ -3,12 +3,20 @@
 ## push가 거부됩니다
 
 ```
-remote: error: GH013: Repository rule violations found
-remote: - Cannot update this protected file path
+remote: Permission to smlsnu/project-rain.git denied to hong.
+fatal: ... The requested URL returned error: 403
 ```
 
-`project_codes/` 하위를 수정했는데 해당 프로젝트 팀에 속하지 않은 경우입니다.
-Owner에게 팀 추가를 요청하거나, 수정 대상이 맞는지 확인하세요.
+해당 프로젝트 팀에 속하지 않은 경우입니다. 팀장 또는 Owner에게 팀 추가를 요청하세요.
+
+## clone이 안 됩니다
+
+```
+remote: Repository not found.
+```
+
+프로젝트 저장소는 모두 **비공개**입니다. 조직 초대를 수락했는지, GitHub에 로그인된 계정이
+맞는지 확인하세요.
 
 ## Pull 할 때 충돌이 났습니다
 
@@ -17,7 +25,7 @@ Owner에게 팀 추가를 요청하거나, 수정 대상이 맞는지 확인하�
 
 ## 조직 초대가 수락되지 않습니다
 
-- 초대 메일의 링크가 아니라 [github.com/orgs/smlsnu/invitation](https://github.com/orgs/smlsnu/invitation) 으로 직접 접속해 보세요.
+- 초대 메일의 링크 대신 [github.com/orgs/smlsnu/invitation](https://github.com/orgs/smlsnu/invitation) 으로 직접 접속해 보세요.
 - 그래도 안 되면 GitHub 아이디를 Owner에게 다시 확인받으세요.
 
 ## 큰 데이터 파일을 실수로 커밋했습니다
@@ -33,29 +41,41 @@ git commit --amend
 
 ## 개인 실험용 코드는 어디에 두나요
 
-이 저장소가 아니라 **개인 GitHub 계정**에 두세요.
-공유할 가치가 생겼을 때 `basic_codes/` 또는 해당 프로젝트 폴더로 옮기면 됩니다.
+연구실 저장소가 아니라 **개인 GitHub 계정**에 두세요.
+공유할 가치가 생겼을 때 `basic-codes` 또는 해당 프로젝트 저장소로 옮기면 됩니다.
 
 ## 결과 그림은 올려도 되나요
 
 원칙적으로 올리지 않습니다. 저장소가 무거워집니다.
-문서에 꼭 필요한 그림만 `docs/` 아래에 넣으세요.
+문서에 꼭 필요한 그림만 `docs` 저장소의 `docs/` 아래에 넣으세요.
 
 ## 남의 코드를 수정해도 되나요
 
-`basic_codes/`는 공용이므로 개선은 환영합니다. 다만
+`basic-codes` 는 공용이므로 개선은 환영합니다. 다만
 
-- 기존 동작을 바꾸는 수정은 브랜치 + PR로 진행하고 작성자에게 리뷰를 요청하세요
+- 기존 동작을 바꾸는 수정은 브랜치와 PR로 진행하고 작성자에게 리뷰를 요청하세요
 - 단순 버그 수정이나 주석 추가는 바로 커밋해도 됩니다
+
+## 여러 프로젝트에 참여하고 있습니다
+
+각 저장소를 따로 clone하면 됩니다. 한 폴더 아래에 나란히 두는 것을 권합니다.
+
+```
+~/sml/
+├── basic-codes/
+├── project-rain/
+└── project-tq/
+```
 
 ## 새 프로젝트를 시작하려면
 
-Owner에게 요청하세요. 팀 생성 → ruleset bypass 추가 → 폴더 생성 순으로 처리됩니다.
+Owner에게 요청하세요. 저장소 생성 → 팀 생성 → 권한 부여 순으로 처리됩니다.
 
-## 저장소가 public인데 괜찮나요
+## PR을 꼭 써야 하나요
 
-분석 코드 자체는 공개해도 문제없는 경우가 대부분입니다. 다만
+강제하지는 않습니다. 다만 아래 경우에는 PR을 권합니다.
 
-- 미발표 연구의 핵심 코드는 공개 시점을 지도교수와 상의하세요
-- 데이터, API 키, 개인정보는 절대 올리지 마세요
-- 민감한 코드가 필요하면 별도의 비공개 저장소를 요청하세요
+- 여러 사람이 함께 쓰는 코드를 크게 바꿀 때
+- 프로젝트 팀장의 확인을 받고 싶을 때
+
+사용법은 [Git 사용법 → Pull Request](git-guide.md#pull-request) 를 참고하세요.
