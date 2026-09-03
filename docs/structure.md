@@ -33,15 +33,8 @@ github.com/smlsnu/
 - 지도·시계열 등 표준 시각화 템플릿
 - 신입 연구원용 입문 노트북
 
-**권장 구조**
-
-```
-basic-codes/
-├── io/          자료 읽기·쓰기
-├── plotting/    시각화 템플릿
-├── utils/       좌표·시간·통계 유틸
-└── tutorials/   입문 노트북
-```
+파일은 저장소 최상위에 평평하게 두고, **이름 앞의 분류 접두어**(`io_`, `plot_`, `calc_`, `util_`, `tut_`)로 구분합니다.
+코드가 충분히 쌓이면 그때 폴더로 묶습니다.
 
 ## project-*
 
@@ -64,7 +57,7 @@ project-rain/
 ├── code/            분석 스크립트·노트북
 ├── result/          팀원끼리 공유하는 결과 그림
 ├── README.md        목적·자료·실행 순서·담당자
-├── environment.yml  conda 환경
+├── environment.yml  conda 환경 (또는 requirements.txt)
 └── .gitignore
 ```
 
@@ -100,7 +93,12 @@ project-rain/
 
 ---
 
-## 코드 작성 권장 사항
+## 코드 작성 규칙
+
+파일 이름 규칙, 머리말 양식, README 표 갱신 방법은 [코드 작성 규칙](conventions.md) 에 정리했습니다.
+실행 환경 구성은 [실행 환경](environment.md) 을 참고하세요.
+
+## 그 밖의 권장 사항
 
 파일 상단에 **무엇을 하는 코드인지, 어떤 입력이 필요한지** 주석으로 명시하세요.
 

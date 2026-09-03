@@ -61,6 +61,8 @@ nav:
   - 시작하기: getting-started.md
   - Git 사용법: git-guide.md
   - 저장소 구성: structure.md
+  - 코드 작성 규칙: conventions.md
+  - 실행 환경: environment.md
   - 권한과 규칙: permissions.md
   - FAQ: faq.md
 

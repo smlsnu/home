@@ -41,6 +41,18 @@ Git이 처음이어도 이 문서만 따라오면 됩니다.
 <span class="sml-card__desc">어떤 저장소가 있고 코드를 어디에 올려야 하는지, 폴더는 어떻게 나누는지 정리했습니다.</span>
 </a>
 
+<a class="sml-card" href="conventions/">
+<span class="sml-card__icon">✍️</span>
+<span class="sml-card__title">코드 작성 규칙</span>
+<span class="sml-card__desc">파일 이름 짓는 법, 머리말 양식, README 코드 목록과 주의사항 표를 채우는 방법입니다.</span>
+</a>
+
+<a class="sml-card" href="environment/">
+<span class="sml-card__icon">🧪</span>
+<span class="sml-card__title">실행 환경</span>
+<span class="sml-card__desc">저장소별 conda·pip 환경을 만들고 갱신하는 규칙입니다. "제 컴퓨터에선 되는데요"를 없앱니다.</span>
+</a>
+
 <a class="sml-card" href="permissions/">
 <span class="sml-card__icon">🔑</span>
 <span class="sml-card__title">권한과 규칙</span>

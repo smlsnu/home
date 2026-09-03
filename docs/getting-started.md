@@ -63,15 +63,25 @@ VS Code에서 하려면 `Ctrl+Shift+P` → **Git: Clone** → 저장소 주소 �
 
 ## 5. 실행 환경 만들기
 
-각 저장소에 `environment.yml` 이 있습니다. conda 환경을 한 번 만들어 두면 모든 저장소에서 씁니다.
+**환경은 저장소마다 따로 만듭니다.** 프로젝트별로 필요한 패키지가 다르기 때문입니다.
+각 저장소 README에 기준 도구(conda 또는 pip)가 적혀 있습니다.
 
-```bash
-cd ~/sml/basic-codes
-conda env create -f environment.yml
-conda activate sml
-```
+=== "conda"
+    ```bash
+    cd ~/sml/project-rain
+    conda env create -f environment.yml
+    conda activate sml-rain
+    ```
 
-Miniforge/Anaconda가 없다면 [Miniforge](https://github.com/conda-forge/miniforge) 설치를 권합니다.
+=== "pip"
+    ```bash
+    cd ~/sml/project-rain
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ```
+
+자세한 규칙과 문제 해결은 [실행 환경](environment.md) 을 참고하세요.
 
 ## 다음 단계
 
