@@ -1,15 +1,18 @@
 # 시작하기
 
+처음 오셨다면 아래 다섯 단계를 순서대로 따라오면 됩니다.
+
 ## 1. 조직 가입
 
-`smlsnu` 조직 초대 메일을 수락합니다. 초대가 오지 않았다면 Owner에게 GitHub 아이디를 알려주세요.
+1. `smlsnu` 조직 초대 메일을 수락합니다.
+2. 초대가 오지 않았다면 Owner에게 GitHub 아이디를 알려주세요.
 
 가입 후 소속되는 팀은 다음과 같습니다.
 
 | 팀 | 대상 | 권한 |
 |----|------|------|
-| `lab-members` | 연구실 구성원 전원 | `basic-codes`, `home` 수정. 모든 프로젝트 저장소 읽기 |
-| `project-<이름>` | 해당 프로젝트 참여자 | 그 프로젝트 저장소 수정 |
+| `lab-members` | 연구실 구성원 전원 | `basic-codes` · `home` 수정, 모든 팀 저장소 읽기 |
+| `team-<이름>` | 해당 팀 구성원 | 그 팀 저장소 수정 |
 
 ## 2. 도구 설치
 
@@ -22,7 +25,7 @@
     ```bash
     brew install git
     ```
-    또는 터미널에서 `git --version` 실행 시 자동 설치 안내가 뜹니다.
+    또는 터미널에서 `git --version` 을 실행하면 자동 설치 안내가 뜹니다.
 
 === "Linux"
     ```bash
@@ -32,10 +35,11 @@
 
 ### VS Code
 
-[code.visualstudio.com](https://code.visualstudio.com/) 에서 설치한 뒤,
-확장 **GitHub Pull Requests and Issues** 를 추가로 설치합니다.
+1. [code.visualstudio.com](https://code.visualstudio.com/) 에서 설치합니다.
+2. 확장 **GitHub Pull Requests and Issues** 를 추가로 설치합니다.
+3. 좌하단 계정 아이콘 → **Sign in with GitHub** 으로 로그인합니다.
 
-좌하단 계정 아이콘 → **Sign in with GitHub** 으로 로그인해 두면 이후 인증 절차가 필요 없습니다.
+로그인해 두면 이후 인증 절차가 필요 없습니다.
 
 ## 3. 커밋 작성자 설정
 
@@ -53,29 +57,33 @@ git config --global user.email "your_id@snu.ac.kr"
 ```bash
 mkdir ~/sml && cd ~/sml
 git clone https://github.com/smlsnu/basic-codes.git
-git clone https://github.com/smlsnu/project-rain.git    # 참여하는 프로젝트만
+git clone https://github.com/smlsnu/team-rain.git    # 소속된 팀만
 ```
 
 VS Code에서 하려면 `Ctrl+Shift+P` → **Git: Clone** → 저장소 주소 입력 → 저장할 폴더 선택.
 
 !!! note "저장소가 보이지 않는다면"
-    프로젝트 저장소는 비공개입니다. 조직 초대를 수락했고 해당 계정으로 로그인되어 있어야 합니다.
+    팀 저장소는 비공개입니다. 아래를 확인하세요.
+
+    - 조직 초대를 수락했는가
+    - 해당 계정으로 GitHub에 로그인되어 있는가
+    - 그 팀에 소속되어 있는가
 
 ## 5. 실행 환경 만들기
 
-**환경은 저장소마다 따로 만듭니다.** 프로젝트별로 필요한 패키지가 다르기 때문입니다.
+**환경은 저장소마다 따로 만듭니다.** 팀별로 필요한 패키지가 다르기 때문입니다.
 각 저장소 README에 기준 도구(conda 또는 pip)가 적혀 있습니다.
 
 === "conda"
     ```bash
-    cd ~/sml/project-rain
+    cd ~/sml/team-rain
     conda env create -f environment.yml
     conda activate sml-rain
     ```
 
 === "pip"
     ```bash
-    cd ~/sml/project-rain
+    cd ~/sml/team-rain
     python -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt
@@ -85,4 +93,5 @@ VS Code에서 하려면 `Ctrl+Shift+P` → **Git: Clone** → 저장소 주소 �
 
 ## 다음 단계
 
-[Git 사용법](git-guide.md) 으로 이동해 실제 작업 흐름을 익히세요.
+- [Git 사용법](git-guide.md) — 실제 작업 흐름을 익힙니다.
+- [코드 작성 규칙](conventions.md) — 파일 이름 규칙과 머리말 양식을 확인합니다.

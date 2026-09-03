@@ -3,11 +3,11 @@
 ## push가 거부됩니다
 
 ```
-remote: Permission to smlsnu/project-rain.git denied to hong.
+remote: Permission to smlsnu/team-rain.git denied to hong.
 fatal: ... The requested URL returned error: 403
 ```
 
-해당 프로젝트 팀에 속하지 않은 경우입니다. 팀장 또는 Owner에게 팀 추가를 요청하세요.
+해당 팀에 속하지 않은 경우입니다. 팀장 또는 Owner에게 팀 추가를 요청하세요.
 
 ## clone이 안 됩니다
 
@@ -15,7 +15,7 @@ fatal: ... The requested URL returned error: 403
 remote: Repository not found.
 ```
 
-프로젝트 저장소는 모두 **비공개**입니다. 조직 초대를 수락했는지, GitHub에 로그인된 계정이
+팀 저장소는 모두 **비공개**입니다. 조직 초대를 수락했는지, GitHub에 로그인된 계정이
 맞는지 확인하세요.
 
 ## Pull 할 때 충돌이 났습니다
@@ -42,7 +42,7 @@ git commit --amend
 ## 개인 실험용 코드는 어디에 두나요
 
 연구실 저장소가 아니라 **개인 GitHub 계정**에 두세요.
-공유할 가치가 생겼을 때 `basic-codes` 또는 해당 프로젝트 저장소로 옮기면 됩니다.
+공유할 가치가 생겼을 때 `basic-codes` 또는 해당 팀 저장소로 옮기면 됩니다.
 
 ## 결과 그림은 올려도 되나요
 
@@ -56,18 +56,18 @@ git commit --amend
 - 기존 동작을 바꾸는 수정은 브랜치와 PR로 진행하고 작성자에게 리뷰를 요청하세요
 - 단순 버그 수정이나 주석 추가는 바로 커밋해도 됩니다
 
-## 여러 프로젝트에 참여하고 있습니다
+## 여러 팀에 참여하고 있습니다
 
 각 저장소를 따로 clone하면 됩니다. 한 폴더 아래에 나란히 두는 것을 권합니다.
 
 ```
 ~/sml/
 ├── basic-codes/
-├── project-rain/
-└── project-tq/
+├── team-rain/
+└── team-tq/
 ```
 
-## 새 프로젝트를 시작하려면
+## 새 팀를 시작하려면
 
 Owner에게 요청하세요. 저장소 생성 → 팀 생성 → 권한 부여 순으로 처리됩니다.
 
@@ -85,6 +85,6 @@ Owner에게 요청하세요. 저장소 생성 → 팀 생성 → 권한 부여 �
 강제하지는 않습니다. 다만 아래 경우에는 PR을 권합니다.
 
 - 여러 사람이 함께 쓰는 코드를 크게 바꿀 때
-- 프로젝트 팀장의 확인을 받고 싶을 때
+- 팀장의 확인을 받고 싶을 때
 
 사용법은 [Git 사용법 → Pull Request](git-guide.md#pull-request) 를 참고하세요.

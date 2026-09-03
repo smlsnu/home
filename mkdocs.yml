@@ -1,5 +1,5 @@
 site_name: SML SNU
-site_description: 서울대학교 위성기상실험실 GitHub 안내
+site_description: 서울대학교 인공위성기상기후연구실 GitHub 안내
 site_url: https://smlsnu.github.io/home/
 repo_url: https://github.com/smlsnu/home
 repo_name: smlsnu/home
@@ -54,6 +54,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/smlsnu
       name: smlsnu 조직
+    - icon: material/web
+      link: https://sml.snu.ac.kr/
+      name: Lab Website
   generator: false
 
 nav:
