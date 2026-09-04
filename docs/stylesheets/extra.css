@@ -1,3 +1,10 @@
+/* ------------------------------------------------------------
+   상단 라벨용 서체.
+   다른 서체로 바꾸려면 아래 두 줄의 이름만 함께 고치면 됩니다.
+   예: Lora / Libre Baskerville / IBM Plex Sans / Inter / Spectral
+   ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap');
+
 /* ============================================================
    SML SNU — 커스텀 스타일
    기조: 흰 바탕, 회색 계조, 단일 강조색. 장식보다 위계.
@@ -118,10 +125,11 @@
   margin-bottom: 1.05rem;
   padding-left: 0.85rem;
   border-left: 2px solid var(--sml-accent);
-  font-family: var(--md-code-font-family), ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.72rem;
+  font-family: 'Source Serif 4', 'Noto Serif KR', Georgia, serif;
+  font-size: 0.82rem;
   font-weight: 400;
-  letter-spacing: 0;
+  font-optical-sizing: auto;
+  letter-spacing: 0.005em;
   text-transform: none;
   color: var(--md-default-fg-color--light);
 }
