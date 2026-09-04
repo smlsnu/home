@@ -3,7 +3,6 @@ site_description: 서울대학교 인공위성기상기후연구실 GitHub 안�
 site_url: https://smlsnu.github.io/home/
 repo_url: https://github.com/smlsnu/home
 repo_name: smlsnu/home
-edit_uri: edit/main/docs/
 copyright: Satellite Meteorology Laboratory, Seoul National University
 
 theme:
@@ -25,7 +24,6 @@ theme:
     - navigation.top
     - navigation.footer
     - toc.follow
-    - content.action.edit
     - content.code.copy
     - content.tabs.link
     - search.highlight

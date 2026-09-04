@@ -5,9 +5,9 @@ hide:
 ---
 
 <div class="sml-hero" markdown="1">
-<span class="sml-hero__eyebrow">Satellite Meteorology Laboratory · Seoul National University</span>
+<span class="sml-hero__eyebrow">Satellite Meteorology Laboratory, Seoul National University</span>
 
-# 인공위성기상기후연구실 GitHub
+# 서울대학교 인공위성기상기후연구실 GitHub
 
 연구실 코드를 함께 쓰고, 팀별 연구 과정을 기록으로 남겨 두는 곳입니다.
 Git이 처음이어도 이 문서만 순서대로 따라오면 됩니다.
