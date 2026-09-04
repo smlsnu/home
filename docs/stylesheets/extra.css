@@ -3,7 +3,7 @@
    다른 서체로 바꾸려면 아래 두 줄의 이름만 함께 고치면 됩니다.
    예: Lora / Libre Baskerville / IBM Plex Sans / Inter / Spectral
    ------------------------------------------------------------ */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================================
    SML SNU — 커스텀 스타일
